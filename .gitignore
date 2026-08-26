@@ -1,0 +1,22 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor temp
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Build / deps
+node_modules/
+dist/
+*.log
+
+# Secrets
+*.pem
+*.key
+.env
+.env.local

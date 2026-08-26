@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Frequently Asked Questions | Lancaster Home Handyman — Lancaster County, PA</title>
+    
+    <!-- SEO Metadata -->
+    <meta name="description" content="Answers to the most common questions about handyman services in Lancaster County, PA — pricing, service area, insurance, payment, and more. From Ian Furbush, Lancaster Home Handyman.">
+    <link rel="canonical" href="https://www.lancasterhomehandyman.com/faq/">
+    
+    <!-- Open Graph / Social Metadata -->
+    <meta property="og:title" content="Handyman FAQ | Lancaster Home Handyman — Lancaster County, PA">
+    <meta property="og:description" content="Answers to the most common questions about handyman services in Lancaster County, PA — pricing, service area, insurance, payment, and more.">
+    <meta property="og:url" content="https://www.lancasterhomehandyman.com/faq/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/ian%20and%20penny.webp">
+
+    <!-- Twitter Card (override og:image with the logo for Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Handyman FAQ | Lancaster Home Handyman">
+    <meta name="twitter:description" content="Skip the $150 dispatch fee. Get transparent, high-quality handyman services in Lancaster County, PA.">
+    <meta name="twitter:image" content="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handymanogimage.webp">
+
+    <!-- LocalBusiness Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Lancaster Home Handyman",
+      "image": "https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/ian%20and%20penny.webp",
+      "telephone": "+1-717-984-1127",
+      "url": "https://www.lancasterhomehandyman.com/",
+      "founder": {
+        "@type": "Person",
+        "name": "Ian Furbush"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Lancaster County, PA"
+      },
+      "priceRange": "$",
+      "description": "I offer an independent, transparent alternative to big franchised contractors. General repairs, drywall, TV mounting, and furniture assembly.",
+      "makesOffer": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General Repairs"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drywall & Trim"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TV Mounting"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Furniture Assembly"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fixture Install"}}
+      ]
+    }
+    </script>
+
+    <!-- Upgraded Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- AWWWARD STACK: GSAP & Lenis Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <style>
+        :root {
+            --congress-blue: #004792;
+            --cta-teal: #00d1c1;
+            --deep-navy: #003366;
+            --bg-light: #f8fafc;
+            --google-yellow: #fbbc04;
+        }
+
+        /* LENIS VIRTUAL SCROLL STYLES */
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            -webkit-tap-highlight-color: transparent;
+            overflow-x: hidden;
+            padding-bottom: 70px;
+        }
+
+        /* CINEMATIC NOISE OVERLAY */
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4, .nav-link, .cta-text, .service-title {
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .bg-congress-blue { background-color: var(--congress-blue); }
+        .text-congress-blue { color: var(--congress-blue); }
+        .border-congress-blue { border-color: var(--congress-blue); }
+        .bg-cta-teal { background-color: var(--cta-teal); }
+        .text-cta-teal { color: var(--cta-teal); }
+        .border-cta-teal { border-color: var(--cta-teal); }
+        .text-google-yellow { color: var(--google-yellow) !important; }
+
+        /* --- MAGNETIC BUTTON WRAPPER --- */
+        .magnetic-wrap { display: inline-block; padding: 10px; cursor: pointer; }
+        .magnetic-inner { pointer-events: none; } 
+
+        /* --- SNAPPY HAPTIC FEEDBACK --- */
+        .option-btn, button, a.bg-congress-blue, a.bg-cta-teal {
+            transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+                        box-shadow 0.2s ease-out,
+                        border-color 0.2s ease-out,
+                        background-color 0.2s ease-out;
+            cursor: pointer;
+            transform-origin: center center;
+            user-select: none;
+            touch-action: manipulation;
+        }
+        
+        /* Specialized Bouncy Haptics for Bottom Nav */
+        .nav-item {
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease, filter 0.3s ease;
+            transform-origin: center bottom;
+            cursor: pointer;
+            user-select: none;
+            touch-action: manipulation;
+        }
+        
+        .haptic-active { 
+            transform: scale(0.96) !important; 
+            transition: transform 0.05s cubic-bezier(0.4, 0, 0.2, 1) !important; 
+        }
+        
+        /* Deeper press for small nav items to pronounce the bounce */
+        .nav-item.haptic-active {
+            transform: scale(0.82) translateY(4px) !important;
+            transition: transform 0.05s linear !important;
+        }
+
+        /* Active Nav State (Lights up Teal) */
+        .nav-active {
+            color: var(--cta-teal) !important;
+            filter: drop-shadow(0 0 8px rgba(0, 209, 193, 0.45));
+        }
+
+        /* --- SERVICE CARDS --- */
+        .service-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            background-color: white;
+            border-color: #f3f4f6;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            will-change: transform, opacity;
+        }
+        
+        .service-card:hover {
+            border-color: var(--congress-blue);
+            background-color: #f4f8fd;
+            box-shadow: 0 15px 30px rgba(0, 71, 146, 0.1);
+            transform: translateY(-8px) scale(1.02);
+        }
+        .service-card:hover .icon-box { background-color: var(--congress-blue); }
+        .service-card:hover .icon-box i { color: white !important; }
+
+        .service-card:hover .animate-hammer { animation: hammer-swing 0.4s ease-in-out infinite; transform-origin: bottom right; }
+        @keyframes hammer-swing { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-45deg); } }
+        .service-card:hover .animate-stack { animation: drywall-stack 1s ease-in-out infinite; }
+        @keyframes drywall-stack { 0% { transform: translateY(10px); opacity: 0; } 50% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-5px); opacity: 0.5; } }
+        .service-card:hover .animate-mount { animation: tv-mount 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite; }
+        @keyframes tv-mount { 0% { transform: translateY(15px) scale(0.8); } 100% { transform: translateY(0) scale(1); } }
+        .service-card:hover .animate-assemble { animation: box-shake 0.5s ease-in-out infinite; }
+        @keyframes box-shake { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1) rotate(4deg); } }
+        .service-card:hover .animate-glow { animation: light-pulse 1.2s ease-in-out infinite; }
+        @keyframes light-pulse { 0%, 100% { filter: drop-shadow(0 0 2px white); } 50% { filter: drop-shadow(0 0 15px var(--congress-blue)); } }
+        .service-card:hover .animate-swing { animation: door-swing 1.2s ease-in-out infinite; transform-origin: left center; }
+        @keyframes door-swing { 0%, 100% { transform: perspective(500px) rotateY(0deg); } 50% { transform: perspective(500px) rotateY(-40deg); } }
+
+        /* --- TESTIMONIAL CAROUSEL --- */
+        .carousel-outer {
+            width: 100%; overflow-x: auto; display: flex; gap: 20px; padding: 20px 16px;
+            scrollbar-width: none; -ms-overflow-style: none; cursor: grab;
+            -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory;
+        }
+        .carousel-outer::-webkit-scrollbar { display: none; }
+        .carousel-outer:active { cursor: grabbing; }
+
+        .review-card {
+            flex: 0 0 85vw; max-width: 320px; background: white; border-radius: 24px;
+            padding: 24px; border: 1px solid #e5e7eb; display: flex; flex-direction: column;
+            box-shadow: 0 20px 40px -10px rgba(0, 33, 66, 0.15), 0 8px 16px -8px rgba(0, 33, 66, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 50px -12px rgba(0, 33, 66, 0.2), 0 12px 20px -10px rgba(0, 33, 66, 0.12);
+        }
+        .review-text { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; transition: all 0.2s ease; }
+        .review-text.expanded { -webkit-line-clamp: unset; }
+        .read-more-btn { color: var(--congress-blue); font-size: 11px; font-weight: 700; margin-top: 8px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.05em; }
+        .star-filled { color: var(--google-yellow) !important; fill: var(--google-yellow) !important; }
+
+                /* --- FAQ ACCORDION (native <details>, animated) --- */
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::marker { content: ''; }
+        .faq-item summary { list-style: none; transition: background-color 0.2s ease; }
+        .faq-item summary:hover { background-color: rgba(0, 71, 146, 0.04); }
+        .faq-answer-wrapper { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .faq-item[open] .faq-answer-wrapper { grid-template-rows: 1fr; }
+        .faq-answer-inner { overflow: hidden; }
+
+        /* --- FORM STYLES --- */
+        .option-btn.selected { background-color: var(--congress-blue); border-color: var(--congress-blue); color: white; box-shadow: 0 8px 15px rgba(0, 71, 146, 0.2); }
+        .form-step { display: none; }
+        .form-step.active { display: block; animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        input, textarea { transition: all 0.2s ease; }
+        input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(0, 209, 193, 0.2); }
+
+        /* Glassmorphic Header & Nav */
+        .glass-nav { 
+            position: sticky; top: 0; z-index: 100; 
+            background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .glass-bottom-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+
+        .progress-bar-container { width: 100%; background-color: #f1f5f9; height: 8px; border-radius: 99px; overflow: hidden; margin-bottom: 32px; }
+        .progress-bar { height: 100%; background-color: var(--cta-teal); transition: width 0.8s cubic-bezier(0.85, 0, 0.15, 1); border-radius: 99px; }
+        
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,33,66,0.8); backdrop-filter: blur(8px);
+            display: flex; align-items: center; justify-content: center; z-index: 9999;
+            opacity: 0; visibility: hidden; transition: all 0.4s ease;
+        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-content {
+            background: white; padding: 40px 30px; border-radius: 24px; text-align: center;
+            max-width: 400px; width: 90%; transform: scale(0.9) translateY(20px);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+        .modal-overlay.active .modal-content { transform: scale(1) translateY(0); }
+
+        /* Parallax Image Container setup */
+        .img-parallax-container { overflow: hidden; position: relative; }
+        .img-parallax { will-change: transform; scale: 1.2; transform-origin: top; }
+    </style>
+    <!-- FAQPage Structured Data (canonical for FAQ content) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "How much does a handyman cost in Lancaster County?", "acceptedAnswer": {"@type": "Answer", "text": "Most small jobs run $80 to $250. Larger projects like drywall repair, flooring, or multi-day work are quoted by the job, not the hour. Lancaster Home Handyman does not charge the $150 dispatch fee that the big franchises add on, so quotes are typically noticeably lower for the same work. Customers receive a clear written quote before any work begins."}},
+        {"@type": "Question", "name": "What areas does Lancaster Home Handyman serve?", "acceptedAnswer": {"@type": "Answer", "text": "Lancaster Home Handyman serves all of Lancaster County, Pennsylvania, including Lancaster, Lititz, Manheim, Ephrata, Mount Joy, Columbia, Elizabethtown, Strasburg, Quarryville, Willow Street, Bird-in-Hand, Intercourse, Ronks, Gordonville, Paradise, Leola, Brownstown, Akron, Denver, Adamstown, Reinholds, and the surrounding townships."}},
+        {"@type": "Question", "name": "Is Lancaster Home Handyman licensed and insured?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lancaster Home Handyman is fully insured and proof of coverage can be provided before any work begins. Your home, your belongings, and your peace of mind are protected."}},
+        {"@type": "Question", "name": "Do you do small jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Some of the most common jobs are the ones homeowners have been meaning to fix for a year. If a big franchise will not come out for a one-hour job, Lancaster Home Handyman will. No job is too small."}},
+        {"@type": "Question", "name": "How quickly can you start?", "acceptedAnswer": {"@type": "Answer", "text": "Most jobs can be scheduled within a few days of your call, and often same-week. For urgent jobs, call 717-984-1127 and Lancaster Home Handyman will do their best to fit you in."}},
+        {"@type": "Question", "name": "Do I need to provide materials?", "acceptedAnswer": {"@type": "Answer", "text": "Either option works. Materials can be picked up for you with receipts passed through at cost, no markup, or you can provide your own. Specific brand recommendations for fixtures, hardware, and paint are available on request."}},
+        {"@type": "Question", "name": "How do I get a quote?", "acceptedAnswer": {"@type": "Answer", "text": "Use the contact form on the site or call 717-984-1127. For most jobs a ballpark quote can be given over the phone in a couple of minutes. For larger projects Lancaster Home Handyman will visit the site and provide a written quote at no charge and with no obligation."}},
+        {"@type": "Question", "name": "What forms of payment do you accept?", "acceptedAnswer": {"@type": "Answer", "text": "Cash, check, Venmo, Zelle, and all major credit cards through a mobile card reader. Payment is due when the job is done and the customer is happy with the work."}},
+        {"@type": "Question", "name": "Do you guarantee your work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every job is backed by a workmanship guarantee. If something is not right, Lancaster Home Handyman will come back and make it right at no extra charge. Most of the business comes from referrals, so customer satisfaction is the top priority."}},
+        {"@type": "Question", "name": "Why hire an independent handyman instead of a big franchise?", "acceptedAnswer": {"@type": "Answer", "text": "No 150 dollar dispatch fee, direct communication with the person doing the work, transparent up-front pricing, local references you can verify, and personal accountability. Customers get the same quality work without the franchise overhead, and the savings are passed directly to the customer."}}
+      ]
+    }
+    </script>
+
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Cinematic Grain Layer -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Success Modal -->
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content border-2 border-congress-blue">
+            <div class="w-20 h-20 bg-teal-50 text-cta-teal rounded-full flex items-center justify-center mx-auto mb-6">
+                <i data-lucide="check-circle" class="w-10 h-10"></i>
+            </div>
+            <h3 class="text-2xl text-congress-blue font-bold mb-3 uppercase">Request Sent!</h3>
+            <p class="text-gray-600 mb-8 font-medium leading-relaxed">Thank you! I have personally received your request and will contact you shortly. <br><span class="text-congress-blue font-bold mt-2 inline-block">- Ian</span></p>
+            <button onclick="closeModal()" class="w-full bg-cta-teal text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-teal-500 transition-all shadow-lg active:scale-95" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">Close</button>
+        </div>
+    </div>
+
+    
+<!-- Header -->
+    <header class="glass-nav section-fade">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 overflow-hidden rounded-xl shadow-sm border border-gray-100 bg-gray-50 flex items-center justify-center">
+                    <img src="https://agent-cdn.minimax.io/cdn_upload/20260402/410865338845196297/370753007943766/010006_95c5/workspace/user_input_files/Untitled.jpeg" class="w-full h-full object-cover" alt="Lancaster Home Handyman Logo" width="64" height="64" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i data-lucide="wrench" class="w-6 h-6 text-congress-blue hidden"></i>
+                </div>
+                <div class="flex flex-col leading-none text-left">
+                    <span class="font-bold text-lg md:text-xl tracking-tight text-congress-blue uppercase">Lancaster Home</span>
+                    <span class="text-[10px] md:text-xs font-semibold tracking-[0.2em] text-gray-500 uppercase mt-0.5">Handyman</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-bold text-xs tracking-[0.1em] text-gray-500 uppercase">
+                <a href="#services" class="hover:text-congress-blue transition">Services</a>
+                <a href="#about" class="hover:text-congress-blue transition">Philosophy</a>
+                <a href="#reviews" class="hover:text-congress-blue transition">Reviews</a>
+                <div class="magnetic-wrap">
+                    <a href="#contact" class="magnetic bg-congress-blue text-white px-6 py-3 rounded-xl shadow-md hover:bg-cta-teal transition inline-block" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+                        <span class="magnetic-inner block">Get A Quote</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="magnetic-wrap">
+                <a href="tel:7179841127" class="magnetic flex bg-cta-teal text-white px-4 md:px-6 py-2.5 md:py-3 rounded-xl font-bold items-center gap-2 shadow-md hover:shadow-lg transition-all active:scale-95" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+                    <span class="magnetic-inner flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4 text-white"></i>
+                        <span class="text-[11px] md:text-xs tracking-widest uppercase">717-984-1127</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Page -->
+    <main class="pt-32 pb-16 min-h-screen">
+        <div class="max-w-3xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12">
+                <span class="text-cta-teal font-bold tracking-[0.5em] uppercase text-[10px]">Got Questions?</span>
+                <h1 class="text-4xl md:text-6xl text-congress-blue mt-3 uppercase font-extrabold tracking-tight">Frequently Asked Questions</h1>
+                <div class="w-12 h-1 bg-gray-300 mx-auto mt-6"></div>
+                <p class="text-gray-500 mt-6 text-base md:text-lg max-w-xl mx-auto leading-relaxed">Quick answers to the questions Lancaster County homeowners ask me most. Don't see yours? Just call <a href="tel:7179841127" class="text-congress-blue font-bold hover:text-cta-teal">717-984-1127</a>.</p>
+            </div>
+
+            <div class="space-y-3 faq-list">
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">How much does a handyman cost in Lancaster County?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Most small jobs run $80–$250. Larger projects like drywall repair, flooring, or multi-day work are quoted by the job — not the hour. I don't charge the $150 dispatch fee that the big franchises add on, so my quotes are typically noticeably lower for the same work. You'll always get a clear written quote before I start.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">What areas do you serve?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        I serve all of <strong>Lancaster County</strong>, including Lancaster, Lititz, Manheim, Ephrata, Mount Joy, Columbia, Elizabethtown, Strasburg, Quarryville, Willow Street, Bird-in-Hand, Intercourse, Ronks, Gordonville, Paradise, Leola, Brownstown, Akron, Denver, Adamstown, and Reinholds — plus the surrounding townships. Not sure if you're in range? Just call and ask.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">Are you licensed and insured?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Yes — I'm fully insured and happy to share proof of coverage before any work begins. Your home, your belongings, and your peace of mind are protected.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">Do you do small jobs?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Absolutely. Some of my favorite jobs are the "I've been meaning to fix that for a year" tasks. If a big franchise won't come out for a one-hour job, I will. No job is too small.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">How quickly can you start?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        I can usually start within a few days of your call, and often same-week. For urgent jobs, call me directly at <a href="tel:7179841127" class="text-congress-blue font-bold hover:text-cta-teal">717-984-1127</a> and I'll do my best to fit you in.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">Do I need to provide materials?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Either way works. I'm happy to pick up materials for you — receipts passed through at cost, no markup — or you can provide your own. For fixtures, hardware, and paint, I usually recommend specific brands that have held up well in my experience; just ask.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">How do I get a quote?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Use the form on the main page, or call <a href="tel:7179841127" class="text-congress-blue font-bold hover:text-cta-teal">717-984-1127</a>. For most jobs I can give you a ballpark over the phone in a couple of minutes. For larger projects I'll come look at the work and give you a written quote — no charge, no obligation.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">What forms of payment do you accept?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Cash, check, Venmo, Zelle, and all major credit cards through a mobile card reader. Payment is due when the job is done and you're happy with the work.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">Do you guarantee your work?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        Yes — I stand behind every job. If something isn't right, I'll come back and make it right at no extra charge. Most of my business comes from referrals, so your satisfaction is the metric I care about most.
+                    </div></div>
+                </details>
+                <details class="faq-item group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                    <summary class="cursor-pointer p-5 md:p-6 font-bold text-congress-blue uppercase tracking-wider text-sm flex items-start justify-between gap-4 list-none">
+                        <span class="flex-1">Why hire you instead of a big franchise?</span>
+                        <i data-lucide="plus" class="w-5 h-5 mt-0.5 flex-shrink-0 transition-transform duration-300 group-open:rotate-45 text-cta-teal"></i>
+                    </summary>
+                    <div class="faq-answer-wrapper"><div class="faq-answer-inner px-5 md:px-6 pb-5 md:pb-6 text-gray-600 leading-relaxed text-base">
+                        No $150 dispatch fee. Direct communication with me — the actual person doing the work. Transparent, up-front pricing. Local references you can verify. Personal accountability. You get the same quality work without the franchise overhead, and the savings get passed straight to you.
+                    </div></div>
+                </details>
+            </div>
+
+            <div class="mt-14 text-center">
+                <p class="text-gray-500 text-sm font-bold uppercase tracking-[0.2em] mb-4">Ready to get started?</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="/#contact" class="magnetic inline-flex items-center gap-2 bg-congress-blue text-white px-8 py-4 rounded-2xl font-bold text-sm tracking-widest shadow-[0_15px_30px_rgba(0,71,146,0.15)] uppercase hover:bg-cta-teal hover:shadow-[0_15px_30px_rgba(0,209,193,0.25)] transition-all" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+                        <i data-lucide="clipboard-list" class="w-4 h-4"></i>
+                        <span class="magnetic-inner block">Get a Free Quote</span>
+                    </a>
+                    <a href="tel:7179841127" class="magnetic inline-flex items-center gap-2 bg-white text-congress-blue border-2 border-congress-blue px-8 py-4 rounded-2xl font-bold text-sm tracking-widest uppercase hover:bg-congress-blue hover:text-white transition-all" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        <span class="magnetic-inner block">Call 717-984-1127</span>
+                    </a>
+                </div>
+                <a href="/" class="inline-block mt-8 text-sm text-congress-blue font-bold uppercase tracking-widest hover:text-cta-teal transition">&larr; Back to home</a>
+            </div>
+        </div>
+    </main>
+
+<footer class="bg-congress-blue py-20 text-white text-center">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-12 border-b border-white/10 pb-12">
+            <div class="flex flex-col items-center">
+                <h4 class="text-2xl mb-6 uppercase tracking-widest font-bold">Lancaster Home Handyman</h4>
+                <p class="text-blue-100/70 max-w-sm leading-relaxed text-sm mb-8 text-center font-medium">I offer an independent, transparent alternative to big franchised contractors. I focus on quality work and fair rates.</p>
+                <div class="flex gap-6 justify-center">
+                    <a href="https://www.facebook.com" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-cta-teal transition cursor-pointer" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)" aria-label="Visit our Facebook page" target="_blank" rel="noopener noreferrer"><i data-lucide="facebook" class="w-5 h-5 text-white"></i></a>
+                    <a href="https://www.instagram.com" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-cta-teal transition cursor-pointer" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)" aria-label="Visit our Instagram page" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram" class="w-5 h-5 text-white"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <h4 class="font-bold text-[10px] tracking-[0.4em] uppercase mb-4 text-cta-teal">Direct Line</h4>
+                <a href="tel:7179841127" class="text-3xl block mb-2 hover:text-cta-teal transition text-center font-bold">717-984-1127</a>
+                <p class="text-[10px] text-blue-100/50 font-bold tracking-[0.3em] uppercase mt-2">Lancaster County, PA</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <h4 class="font-bold text-[10px] tracking-[0.4em] uppercase mb-6 text-cta-teal">Why Choose Me</h4>
+                <ul class="space-y-4 text-xs font-bold uppercase tracking-[0.1em] text-blue-100/80 flex flex-col items-center">
+                    <li class="flex items-center gap-3 justify-center text-center"><i data-lucide="check-circle" class="w-4 h-4 text-cta-teal"></i> Fully Insured</li>
+                    <li class="flex items-center gap-3 justify-center text-center"><i data-lucide="check-circle" class="w-4 h-4 text-cta-teal"></i> Local References</li>
+                    <li class="flex items-center gap-3 justify-center text-center"><i data-lucide="check-circle" class="w-4 h-4 text-cta-teal"></i> Personal Service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 pt-10 text-[10px] font-bold uppercase tracking-[0.3em] text-blue-100/40 flex flex-col items-center gap-6">
+            <p>&copy; 2026 LANCASTER HOME HANDYMAN. OWNER & OPERATOR.</p>
+        </div>
+    </footer>
+
+<!-- Mobile Nav -->
+    <nav class="fixed bottom-0 w-full glass-bottom-nav border-t border-gray-200/50 z-50 md:hidden flex justify-around py-3 pb-safe shadow-[0_-10px_20px_-5px_rgba(0,0,0,0.05)]">
+        <a href="/" class="nav-item flex flex-col items-center text-gray-400 hover:text-cta-teal" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+            <i data-lucide="home" class="w-5 h-5 mb-1.5"></i><span class="text-[9px] font-bold uppercase tracking-wider">Home</span>
+        </a>
+        <a href="/#services" class="nav-item flex flex-col items-center text-gray-400 hover:text-cta-teal" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+            <i data-lucide="wrench" class="w-5 h-5 mb-1.5"></i><span class="text-[9px] font-bold uppercase tracking-wider">Services</span>
+        </a>
+        <a href="/#contact" class="nav-item flex flex-col items-center text-gray-400 hover:text-cta-teal" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+            <i data-lucide="clipboard-list" class="w-5 h-5 mb-1.5"></i><span class="text-[9px] font-bold uppercase tracking-wider">Quote</span>
+        </a>
+        <a href="faq/" class="nav-item flex flex-col items-center text-cta-teal nav-active" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+            <i data-lucide="help-circle" class="w-5 h-5 mb-1.5"></i><span class="text-[9px] font-bold uppercase tracking-wider">FAQ</span>
+        </a>
+    </nav>
+
+
+    <script>
+        lucide.createIcons();
+
+        // 1. AWWWARD INTERACTION: Lenis Smooth Scroll Engine
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            orientation: 'vertical',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            wheelMultiplier: 1,
+            touchMultiplier: 2,
+        });
+
+        // Sync Lenis with GSAP ScrollTrigger
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+        gsap.ticker.lagSmoothing(0, 0);
+
+        // 2. AWWWARD INTERACTION: Magnetic Buttons (Desktop Only)
+        if (window.innerWidth > 768) {
+            const magnets = document.querySelectorAll('.magnetic-wrap');
+            magnets.forEach(wrap => {
+                const magneticTarget = wrap.querySelector('.magnetic');
+                
+                wrap.addEventListener('mousemove', (e) => {
+                    const rect = wrap.getBoundingClientRect();
+                    const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
+                    const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+                    gsap.to(magneticTarget, { x: x, y: y, duration: 0.5, ease: 'power2.out' });
+                });
+                
+                wrap.addEventListener('mouseleave', () => {
+                    gsap.to(magneticTarget, { x: 0, y: 0, duration: 0.8, ease: 'elastic.out(1, 0.3)' });
+                });
+            });
+        }
+
+        // 3. AWWWARD ARCHITECTURE: GSAP Timeline Orchestration
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Reveal
+        const heroTl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 1.2 }});
+        heroTl.fromTo('.hero-title', { y: 50, opacity: 0 }, { y: 0, opacity: 1, delay: 0.2 })
+              .fromTo('.hero-p', { y: 30, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.9")
+              .fromTo('.hero-btn-wrap', { y: 20, opacity: 0 }, { y: 0, opacity: 1 }, "-=0.9")
+              .fromTo('.hero-img-wrap', { y: 60, opacity: 0, scale: 0.95 }, { y: 0, opacity: 1, scale: 1 }, "-=1");
+
+        // Image Parallax (Hero + Review Images)
+        gsap.utils.toArray('.img-parallax').forEach(img => {
+            gsap.to(img, {
+                yPercent: -20,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: img.parentElement,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        });
+
+        // Philosophy Cinematic Text Reveal
+        gsap.timeline({
+            scrollTrigger: { trigger: '.phil-section', start: 'top 70%', end: 'center center', scrub: 1 }
+        })
+        .fromTo('.phil-text', { y: 40, opacity: 0 }, { y: 0, opacity: 1 })
+        .to('.phil-line', { scaleX: 1, duration: 1, ease: "power2.inOut" }, "-=0.5");
+
+        // Service Grid Stagger
+        gsap.fromTo('.service-card', 
+            { y: 60, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: "power3.out", stagger: 0.1,
+              scrollTrigger: { trigger: '.service-grid', start: 'top 80%', toggleActions: "play none none reverse" }
+            }
+        );
+
+        // 4. PRESERVED LOGIC & NEW NAV LOGIC
+        function startHaptic(e) { e.classList.add('haptic-active'); }
+        function endHaptic(e) { e.classList.remove('haptic-active'); }
+
+        // --- Bottom Navigation Scroll Observer Engine ---
+        const navLinks = document.querySelectorAll('.nav-link-item');
+        const sectionsToTrack = ['home', 'services', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+
+        const scrollObserverOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px', // Triggers slightly above center screen
+            threshold: 0
+        };
+
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const currentId = entry.target.getAttribute('id');
+                    
+                    // Reset all links
+                    navLinks.forEach(link => {
+                        link.classList.remove('nav-active', 'text-cta-teal');
+                        link.classList.add('text-gray-400');
+                    });
+                    
+                    // Light up matching link
+                    const activeLink = document.querySelector(`.nav-link-item[href="#${currentId}"]`);
+                    if (activeLink) {
+                        activeLink.classList.remove('text-gray-400');
+                        activeLink.classList.add('nav-active', 'text-cta-teal');
+                    }
+                }
+            });
+        }, scrollObserverOptions);
+
+        sectionsToTrack.forEach(sec => scrollObserver.observe(sec));
+
+
+        // Carousel Drag Logic
+        const carousel = document.getElementById('reviewCarousel');
+        let isUserInteracting = false;
+        function smoothAutoScroll() {
+            if (!isUserInteracting && carousel) {
+                carousel.scrollLeft += 0.8;
+                if (carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth - 5)) {
+                    carousel.scrollTo({ left: 0 });
+                }
+            }
+            requestAnimationFrame(smoothAutoScroll);
+        }
+        if(carousel){
+            carousel.addEventListener('pointerdown', () => isUserInteracting = true);
+            window.addEventListener('pointerup', () => isUserInteracting = false);
+            carousel.addEventListener('mouseenter', () => isUserInteracting = true);
+            carousel.addEventListener('mouseleave', () => isUserInteracting = false);
+            requestAnimationFrame(smoothAutoScroll);
+        }
+
+        function toggleReadMore(btn) {
+            const text = btn.previousElementSibling;
+            text.classList.toggle('expanded');
+            btn.innerText = text.classList.contains('expanded') ? "Read Less" : "Read More";
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                lenis.scrollTo(this.getAttribute('href'), { offset: -80 });
+            });
+        });
+
+        function nextStep(s, progress) {
+            document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step' + s).classList.add('active');
+            document.getElementById('formProgress').style.width = progress + '%';
+            lenis.scrollTo('#contact', { offset: -80, duration: 1 });
+        }
+
+        function selectOption(btn) { btn.classList.toggle('selected'); }
+
+        function closeModal() { 
+            document.getElementById('successModal').classList.remove('active');
+            // reset form after closing
+            document.getElementById('multiStepForm').reset();
+            document.querySelectorAll('.option-btn.selected').forEach(btn => btn.classList.remove('selected'));
+            nextStep(1, 33);
+        }
+
+        // --- BASIN AJAX FORM SUBMISSION ---
+        document.getElementById('multiStepForm').onsubmit = function(e) {
+            e.preventDefault(); // Prevent traditional redirect
+            
+            // 1. Gather selected services from Step 1 into the hidden input
+            const selectedServices = Array.from(document.querySelectorAll('.option-btn.selected'))
+                                        .map(btn => btn.innerText)
+                                        .join(', ');
+            document.getElementById('servicesNeeded').value = selectedServices;
+
+            const form = this;
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            // 2. Loading State
+            btn.innerHTML = "SENDING...";
+            btn.classList.add('bg-congress-blue');
+            btn.classList.remove('bg-cta-teal');
+            btn.disabled = true;
+
+            // 3. Send data to Basin via Fetch API
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json' // Tells Basin we want JSON back, preventing HTML redirect
+                }
+            })
+            .then(response => {
+                if(response.ok) {
+                    // Success State
+                    btn.innerHTML = "REQUEST SENT!";
+                    setTimeout(() => { 
+                        document.getElementById('successModal').classList.add('active'); 
+                        btn.innerHTML = originalText;
+                        btn.classList.add('bg-cta-teal');
+                        btn.classList.remove('bg-congress-blue');
+                        btn.disabled = false;
+                    }, 400);
+                } else {
+                    // Error State
+                    alert("Oops! There was a problem submitting your form. Please try again.");
+                    btn.innerHTML = originalText;
+                    btn.classList.add('bg-cta-teal');
+                    btn.classList.remove('bg-congress-blue');
+                    btn.disabled = false;
+                }
+            })
+            .catch(error => {
+                // Network Error State
+                alert("Oops! There was a problem connecting to the server. Please try again.");
+                btn.innerHTML = originalText;
+                btn.classList.add('bg-cta-teal');
+                btn.classList.remove('bg-congress-blue');
+                btn.disabled = false;
+            });
+        };
+    </script>
+
+</body>
+</html>
