@@ -55,11 +55,24 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "5",
+        "reviewCount": "7",
         "bestRating": "5",
         "worstRating": "5"
       },
       "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Tiffany Crawford"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Reasonable price",
+          "reviewBody": "Reasonable price. LHH did multi projects around my home and yard. Profesional, gave accurate fair quotes, cleaned up after every job. Reliable and friendly answered all my questions and we made plans accordingly. On time and did excellent work. I have then I have them on speed dial. Replaced my sump pump on emergency call."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Nicholas Bitetto"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "reviewBody": "Excellent work."
+        },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "Emily Lindsey"},
@@ -441,7 +454,50 @@
 
             <div class="carousel-outer pb-8" id="reviewCarousel">
                 
-                <!-- Review 1: Emily Lindsey -->
+                <!-- Review 1: Tiffany Crawford -->
+                <div class="review-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="relative w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center overflow-visible flex-shrink-0">
+                            <span class="text-white font-bold text-2xl uppercase">T</span>
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/google%20icon.webp" alt="Google review" class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white p-0.5 shadow-md ring-2 ring-white" loading="lazy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-sm text-gray-900 uppercase tracking-wider">Tiffany Crawford</p>
+                            <p class="text-[10px] text-gray-500 font-medium uppercase tracking-wider mt-0.5">Local Guide · 18 reviews</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3"><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i></div>
+                    <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"<span class="not-italic font-bold text-congress-blue">Reasonable price</span><br><br>LHH did multi projects around my home and yard. Profesional, gave accurate fair quotes, cleaned up after every job. Reliable and friendly answered all my questions and we made plans accordingly. On time and did excellent work. I have then I have them on speed dial. Replaced my sump pump on emergency call."</p>
+                    <div class="read-more-btn" onclick="toggleReadMore(this)">Read More</div>
+                    <div class="mt-4 grid grid-cols-3 gap-2">
+                        <div class="rounded-xl overflow-hidden aspect-square border border-gray-100 bg-gray-100 img-parallax-container">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/Tiffany%20review%20photo%201.webp" class="w-full h-full object-cover img-parallax" alt="Tiffany Crawford project photo 1 by Lancaster Home Handyman" loading="lazy" width="200" height="200" onerror="this.style.display='none'">
+                        </div>
+                        <div class="rounded-xl overflow-hidden aspect-square border border-gray-100 bg-gray-100 img-parallax-container">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/Tiffany%20review%20photo%202.webp" class="w-full h-full object-cover img-parallax" alt="Tiffany Crawford project photo 2 by Lancaster Home Handyman" loading="lazy" width="200" height="200" onerror="this.style.display='none'">
+                        </div>
+                        <div class="rounded-xl overflow-hidden aspect-square border border-gray-100 bg-gray-100 img-parallax-container">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/Tiffany%20review%20photo%203.webp" class="w-full h-full object-cover img-parallax" alt="Tiffany Crawford project photo 3 by Lancaster Home Handyman" loading="lazy" width="200" height="200" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2: Nicholas Bitetto -->
+                <div class="review-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="relative w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center overflow-visible flex-shrink-0">
+                            <span class="text-white font-bold text-2xl uppercase">N</span>
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/google%20icon.webp" alt="Google review" class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white p-0.5 shadow-md ring-2 ring-white" loading="lazy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-sm text-gray-900 uppercase tracking-wider">Nicholas Bitetto</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3"><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i></div>
+                    <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Excellent work."</p>
+                </div>
+
+                <!-- Review 3: Emily Lindsey -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -461,7 +517,7 @@
                     </div>
                 </div>
 
-                <!-- Review 2: Heather Klinger -->
+                <!-- Review 4: Heather Klinger -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -476,7 +532,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Ian went way above and beyond to paint at my house, he had a helper call out and one evening working until after 1AM. I highly recommend him and will be using him again in the future. In addition, the paint job exceeded all expectations!"</p>
                 </div>
 
-                <!-- Review 3: Jump Man -->
+                <!-- Review 5: Jump Man -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -491,7 +547,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Solid work will def recommend 👌"</p>
                 </div>
 
-                <!-- Review 4: The G Spot Thrift Boutique -->
+                <!-- Review 6: The G Spot Thrift Boutique -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -510,7 +566,7 @@
                     </div>
                 </div>
 
-                <!-- Review 5: Clyde Barron -->
+                <!-- Review 7: Clyde Barron -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
