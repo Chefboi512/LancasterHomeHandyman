@@ -242,6 +242,8 @@
         @keyframes light-pulse { 0%, 100% { filter: drop-shadow(0 0 2px white); } 50% { filter: drop-shadow(0 0 15px var(--congress-blue)); } }
         .service-card:hover .animate-swing { animation: door-swing 1.2s ease-in-out infinite; transform-origin: left center; }
         @keyframes door-swing { 0%, 100% { transform: perspective(500px) rotateY(0deg); } 50% { transform: perspective(500px) rotateY(-40deg); } }
+        .service-card:hover .animate-spray { animation: spray-sweep 0.8s ease-in-out infinite; }
+        @keyframes spray-sweep { 0%, 100% { transform: translateX(-4px) rotate(-4deg); } 50% { transform: translateX(4px) rotate(4deg); } }
 
         /* --- TESTIMONIAL CAROUSEL --- */
         .carousel-outer {
@@ -415,6 +417,11 @@
                     <div class="icon-box w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 mx-auto transition-all duration-300"><i data-lucide="monitor" class="animate-mount text-cta-teal w-8 h-8"></i></div>
                     <h3 class="service-title text-xl text-congress-blue mb-4">TV Mounting</h3>
                     <p class="text-gray-500 text-sm md:text-base leading-relaxed font-medium">Secure mounting and wire concealment. I handle everything from flat screens to heavy-duty setups.</p>
+                </div>
+                <div class="service-card p-8 md:p-10 rounded-[2rem] border text-center" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
+                    <div class="icon-box w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 mx-auto transition-all duration-300"><i data-lucide="droplets" class="animate-spray text-cta-teal w-8 h-8"></i></div>
+                    <h3 class="service-title text-xl text-congress-blue mb-4">Pressure Washing</h3>
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed font-medium">I clean driveways, decks, siding, and patios — removing dirt, mold, and years of buildup to refresh your curb appeal.</p>
                 </div>
                 <div class="service-card p-8 md:p-10 rounded-[2rem] border text-center" onpointerdown="startHaptic(this)" onpointerup="endHaptic(this)">
                     <div class="icon-box w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 mx-auto transition-all duration-300"><i data-lucide="package" class="animate-assemble text-cta-teal w-8 h-8"></i></div>
