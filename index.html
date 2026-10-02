@@ -62,11 +62,25 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "8",
+        "reviewCount": "10",
         "bestRating": "5",
         "worstRating": "5"
       },
       "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Storm Schellhammer"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great price",
+          "reviewBody": "Great price. Ian was phenomenal!! From start to finish! A very old friend of mine recommended him after doing work for him. The estimate was very thorough and detailed and no surprise costs in the end! Would highly recommend Ian my self to anyone looking for a wide array of services he offers. He ripped up and replaced about half my deck due to it having some damaged boards due to weather and just being old. He also replaced a banister. Job well done Ian! Thank you"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Krystal Prince"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "name": "Great price",
+          "reviewBody": "Great price. Ian was great! Quick, in and out ensuring my new oven was installed, correctly! Would Highly recommend."
+        },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "Michaeleen Furbush"},
@@ -475,7 +489,42 @@
 
             <div class="carousel-outer pb-8" id="reviewCarousel">
                 
-                <!-- Review 1: Michaeleen Furbush -->
+                <!-- Review 1: Storm Schellhammer -->
+                <div class="review-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="relative w-16 h-16 rounded-full bg-emerald-700 flex items-center justify-center overflow-visible flex-shrink-0">
+                            <span class="text-white font-bold text-2xl uppercase">S</span>
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/google%20icon.webp" alt="Google review" class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white p-0.5 shadow-md ring-2 ring-white" loading="lazy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-sm text-gray-900 uppercase tracking-wider">Storm Schellhammer</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3"><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i></div>
+                    <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"<span class="not-italic font-bold text-congress-blue">Great price</span><br><br>Ian was phenomenal!! From start to finish! A very old friend of mine recommended him after doing work for him. The estimate was very thorough and detailed and no surprise costs in the end! Would highly recommend Ian my self to anyone looking for a wide array of services he offers. He ripped up and replaced about half my deck due to it having some damaged boards due to weather and just being old. He also replaced a banister. Job well done Ian! Thank you"</p>
+                    <div class="read-more-btn" onclick="toggleReadMore(this)">Read More</div>
+                </div>
+
+                <!-- Review 2: Krystal Prince -->
+                <div class="review-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/Krystal%20Prince%20profile%20photo.webp" class="w-full h-full object-cover scale-[1.35]" alt="Krystal Prince review profile" loading="lazy" width="64" height="64" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-white font-bold text-xl uppercase\'>K</span>'; this.parentElement.classList.remove('bg-gray-200'); this.parentElement.classList.add('bg-fuchsia-500');">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/google%20icon.webp" alt="Google review" class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white p-0.5 shadow-md ring-2 ring-white" loading="lazy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-sm text-gray-900 uppercase tracking-wider">Krystal Prince</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3"><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i></div>
+                    <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"<span class="not-italic font-bold text-congress-blue">Great price</span><br><br>Ian was great! Quick, in and out ensuring my new oven was installed, correctly! Would Highly recommend."</p>
+                    <div class="mt-4 rounded-xl overflow-hidden aspect-video border border-gray-100 bg-gray-100 flex items-center justify-center img-parallax-container">
+                        <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/Krystal%20prince%20oven%20photo.webp" class="w-full h-full object-cover img-parallax" alt="New oven installation by Lancaster Home Handyman" loading="lazy" width="640" height="360" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="image" class="w-8 h-8 text-gray-400 hidden"></i>
+                    </div>
+                </div>
+
+                <!-- Review 3: Michaeleen Furbush -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-rose-600 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -491,7 +540,7 @@
                     <div class="read-more-btn" onclick="toggleReadMore(this)">Read More</div>
                 </div>
 
-                <!-- Review 2: Tiffany Crawford -->
+                <!-- Review 4: Tiffany Crawford -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -519,7 +568,7 @@
                     </div>
                 </div>
 
-                <!-- Review 3: Nicholas Bitetto -->
+                <!-- Review 5: Nicholas Bitetto -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -534,7 +583,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Excellent work."</p>
                 </div>
 
-                <!-- Review 4: Emily Lindsey -->
+                <!-- Review 6: Emily Lindsey -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -554,7 +603,7 @@
                     </div>
                 </div>
 
-                <!-- Review 5: Heather Klinger -->
+                <!-- Review 7: Heather Klinger -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -569,7 +618,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Ian went way above and beyond to paint at my house, he had a helper call out and one evening working until after 1AM. I highly recommend him and will be using him again in the future. In addition, the paint job exceeded all expectations!"</p>
                 </div>
 
-                <!-- Review 6: Jump Man -->
+                <!-- Review 8: Jump Man -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -584,7 +633,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Solid work will def recommend 👌"</p>
                 </div>
 
-                <!-- Review 7: The G Spot Thrift Boutique -->
+                <!-- Review 9: The G Spot Thrift Boutique -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -603,7 +652,7 @@
                     </div>
                 </div>
 
-                <!-- Review 8: Clyde Barron -->
+                <!-- Review 10: Clyde Barron -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
