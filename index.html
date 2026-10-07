@@ -62,11 +62,17 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "10",
+        "reviewCount": "11",
         "bestRating": "5",
         "worstRating": "5"
       },
       "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "James Bouras"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "reviewBody": "Ian, with Lancaster Home Handyman, has helped me with multiple projects over the years and has always done a great job. He's got a great work ethic, shows up on time and is very knowledgeable and capable in many different areas. In the future, I will definitely reach out to Ian to do more projects!!! HIGHLY RECOMMENDED!!!"
+        },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "Storm Schellhammer"},
@@ -489,7 +495,24 @@
 
             <div class="carousel-outer pb-8" id="reviewCarousel">
                 
-                <!-- Review 1: Storm Schellhammer -->
+                <!-- Review 1: James Bouras -->
+                <div class="review-card">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/James%20Bouras%20Profile%20Photo.webp" class="w-full h-full object-cover scale-[1.35]" alt="James Bouras review profile" loading="lazy" width="64" height="64" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-white font-bold text-2xl uppercase\'>J</span>'; this.parentElement.classList.remove('bg-white'); this.parentElement.classList.add('bg-indigo-600');">
+                            <img src="https://pub-f30bd9ec57cb4bbfb41bc8336c0bbf81.r2.dev/handyman%20reviews/google%20icon.webp" alt="Google review" class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white p-0.5 shadow-md ring-2 ring-white" loading="lazy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-sm text-gray-900 uppercase tracking-wider">James Bouras</p>
+                            <p class="text-[10px] text-gray-500 font-medium uppercase tracking-wider mt-0.5">Local Guide · 32 reviews</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3"><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i><i data-lucide="star" class="w-5 h-5 star-filled"></i></div>
+                    <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Ian, with Lancaster Home Handyman, has helped me with multiple projects over the years and has always done a great job. He's got a great work ethic, shows up on time and is very knowledgeable and capable in many different areas. In the future, I will definitely reach out to Ian to do more projects!!! HIGHLY RECOMMENDED!!!"</p>
+                    <div class="read-more-btn" onclick="toggleReadMore(this)">Read More</div>
+                </div>
+
+                <!-- Review 2: Storm Schellhammer -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-emerald-700 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -505,7 +528,7 @@
                     <div class="read-more-btn" onclick="toggleReadMore(this)">Read More</div>
                 </div>
 
-                <!-- Review 2: Krystal Prince -->
+                <!-- Review 3: Krystal Prince -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -524,7 +547,7 @@
                     </div>
                 </div>
 
-                <!-- Review 3: Michaeleen Furbush -->
+                <!-- Review 4: Michaeleen Furbush -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-rose-600 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -540,7 +563,7 @@
                     <div class="read-more-btn" onclick="toggleReadMore(this)">Read More</div>
                 </div>
 
-                <!-- Review 4: Tiffany Crawford -->
+                <!-- Review 5: Tiffany Crawford -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -568,7 +591,7 @@
                     </div>
                 </div>
 
-                <!-- Review 5: Nicholas Bitetto -->
+                <!-- Review 6: Nicholas Bitetto -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -583,7 +606,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Excellent work."</p>
                 </div>
 
-                <!-- Review 6: Emily Lindsey -->
+                <!-- Review 7: Emily Lindsey -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -603,7 +626,7 @@
                     </div>
                 </div>
 
-                <!-- Review 7: Heather Klinger -->
+                <!-- Review 8: Heather Klinger -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -618,7 +641,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Ian went way above and beyond to paint at my house, he had a helper call out and one evening working until after 1AM. I highly recommend him and will be using him again in the future. In addition, the paint job exceeded all expectations!"</p>
                 </div>
 
-                <!-- Review 8: Jump Man -->
+                <!-- Review 9: Jump Man -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center overflow-visible flex-shrink-0">
@@ -633,7 +656,7 @@
                     <p class="review-text text-base text-gray-600 font-medium italic leading-relaxed">"Solid work will def recommend 👌"</p>
                 </div>
 
-                <!-- Review 9: The G Spot Thrift Boutique -->
+                <!-- Review 10: The G Spot Thrift Boutique -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
@@ -652,7 +675,7 @@
                     </div>
                 </div>
 
-                <!-- Review 10: Clyde Barron -->
+                <!-- Review 11: Clyde Barron -->
                 <div class="review-card">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="relative w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-visible flex-shrink-0">
