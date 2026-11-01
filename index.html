@@ -169,6 +169,7 @@
             --deep-navy: #003366;
             --bg-light: #f8fafc;
             --google-yellow: #fbbc04;
+            --fall-orange: #E06F2D;
         }
 
         /* LENIS VIRTUAL SCROLL STYLES */
@@ -210,6 +211,27 @@
         .text-cta-teal { color: var(--cta-teal); }
         .border-cta-teal { border-color: var(--cta-teal); }
         .text-google-yellow { color: var(--google-yellow) !important; }
+        .bg-fall-orange { background-color: var(--fall-orange); }
+        .text-fall-orange { color: var(--fall-orange); }
+
+        /* --- FALL SAVINGS ANNOUNCEMENT BANNER --- */
+        .fall-banner {
+            background-color: var(--fall-orange);
+            color: #ffffff;
+            position: relative;
+            z-index: 1;
+        }
+        .fall-banner-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 1.45;
+            letter-spacing: 0.025em;
+            font-size: clamp(11px, 3.636vw, 16px);
+        }
+        @media (min-width: 768px) {
+            .fall-banner-text { font-size: 18px; line-height: 1.4; }
+        }
 
         /* --- MAGNETIC BUTTON WRAPPER --- */
         .magnetic-wrap { display: inline-block; padding: 10px; cursor: pointer; }
@@ -398,6 +420,13 @@
             </div>
         </div>
     </header>
+
+    <!-- Fall Savings Announcement Banner -->
+    <div class="fall-banner">
+        <p class="fall-banner-text max-w-7xl mx-auto px-3 md:px-8 py-3.5 text-center">
+            Fall Savings: Get Your Home Winter-Ready Before the Freeze!
+        </p>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="relative pt-12 md:pt-24 pb-20 overflow-hidden text-center hero-section scroll-mt-20">
